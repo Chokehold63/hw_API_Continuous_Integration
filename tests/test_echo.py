@@ -44,7 +44,7 @@ def test_get_request_returns_headers():
 def test_head_request_returns_200_and_empty_body():
     response = requests.head(test_url_get)
 
-    assert response.status_code == 404
+    assert response.status_code == 200
     assert response.text == ""
 
 
